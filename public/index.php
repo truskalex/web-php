@@ -7,4 +7,4 @@ echo '<pre>';
 print_r($init);
 echo '</pre>';
 
-
+?>
