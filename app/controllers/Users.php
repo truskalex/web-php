@@ -1,9 +1,9 @@
 <?php
 
 
-class users
+class Users
 {
-  public function login(){
-
+  public function login($id, $data){
+    echo $id.' '.$data;
   }
 }
