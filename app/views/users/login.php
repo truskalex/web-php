@@ -4,6 +4,7 @@
         <div class="card card/body bg-light mt-5">
             <h2>Log-In</h2>
             <form action="<?php echo URLROOT;?>/users/register" method="post">
+
                 <div class="form-group">
                     <label for="name">Email: <sup>*</sup></label>
                     <input type="email" id="email" class="form-control">
