@@ -29,14 +29,16 @@ class Users extends Controller
                   $data['email_err'] = 'Please enter the email';
               }
               if (empty($data['pass'])) {
-                  $data['pass_err'] = 'Please enter the pass';
+                  $data['pass_err'] = 'Please enter the password';
+              } elseif (strlen($data['pass']) < 6){
+                  $data['pass_err'] = 'Password must be atleast 6 characters!';
               }
               if (empty($data['pass2'])){
-              $data['pass2_err'] = 'Please enter the pass2';
+              $data['pass2_err'] = 'Please enter the confirmation password!';
           }
-          echo '<pre>';
-          print_r($data);
-          echo '</pre>';
+              elseif ($data['pass'] != $data['pass2']){
+                  $data['pass2_err'] = 'Passwords do not match!';
+              }
           $this->view('users/register', $data);
       } else{
           echo 'yeetr';
