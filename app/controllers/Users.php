@@ -40,7 +40,6 @@ class Users extends Controller
               }
           $this->view('users/register', $data);
       } else{
-          echo 'yeetr';
           $this->view('users/register');
       }
   }
