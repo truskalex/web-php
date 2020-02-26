@@ -9,7 +9,6 @@ class Users extends Controller
 
   public function register(){
       if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-          echo 'data is sent';
           $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
           $data = array(
             'name' => trim($_POST['name']),
