@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 26, 2020 at 10:11 AM
+-- Generation Time: Feb 26, 2020 at 10:36 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -16,8 +16,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `veeb`
 --
-CREATE DATABASE IF NOT EXISTS `veeb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `veeb`;
+CREATE DATABASE IF NOT EXISTS `web-php` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `web-php`;
 
 -- --------------------------------------------------------
 
@@ -33,6 +33,13 @@ CREATE TABLE IF NOT EXISTS `users` (
   `pass` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `pass`, `created_at`) VALUES
+(1, 'Anna Karutina', 'anna@host.loc', 'qwerty', '2020-02-26 09:34:48');
 SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
