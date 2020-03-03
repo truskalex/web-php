@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
+--  Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `pass`, `created_at`) VALUES
