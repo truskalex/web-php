@@ -2,7 +2,7 @@
 // rakendusega seotud konstandid
 define('URLROOT', 'http://localhost/web-php');
 define('APPROOT', dirname(dirname(__FILE__)));
-define('SITENAME', 'IS Veeb');
+define('SITENAME', 'web-php');
 
 // db konstandid
 define('DB_HOST', 'localhost');
